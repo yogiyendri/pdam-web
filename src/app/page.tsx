@@ -1,14 +1,11 @@
-import Footer from "@/components/footer";
-import Main from "@/components/main";
-import Navbar from "@/components/navbar";
-import Image from "next/image";
+import Feature from "@/components/feature";
+import Carousel from "@/components/ui/carousel";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Main />
-      <Footer />
+      <Carousel />
+      <Feature />
     </>
   );
 }

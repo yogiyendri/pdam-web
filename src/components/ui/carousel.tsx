@@ -44,27 +44,29 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative flex justify-center items-center w-full h-[calc(100vh-65px)]">
-      <Image
-        src={CarouselData.slides[index].src}
-        alt={CarouselData.slides[index].alt}
-        width={1920}
-        height={1080}
-        className="w-full h-full object-center object-cover"
-      />
-      <button
-        onClick={handlePrevious}
-        className="absolute p-2 bg-[#008ce1] hover:bg-[#008ce1]/80 text-slate-200 hover:text-white rounded-full hover:cursor-pointer left-4"
-      >
-        <BsChevronLeft className="w-6 h-6" />
-      </button>
-      <button
-        onClick={handlePrevious}
-        className="absolute p-2 bg-[#008ce1] hover:bg-[#008ce1]/80 text-slate-200 hover:text-white rounded-full hover:cursor-pointer right-4"
-      >
-        <BsChevronRight className="w-6 h-6" />
-      </button>
-    </div>
+    <section id="carousel">
+      <div className="relative flex justify-center items-center w-full h-[calc(100vh-65px)]">
+        <Image
+          src={CarouselData.slides[index].src}
+          alt={CarouselData.slides[index].alt}
+          width={1920}
+          height={1080}
+          className="w-full h-full object-center object-cover"
+        />
+        <button
+          onClick={handlePrevious}
+          className="absolute p-2 bg-[#008ce1] hover:bg-[#008ce1]/80 text-slate-200 hover:text-white rounded-full hover:cursor-pointer left-4"
+        >
+          <BsChevronLeft className="w-6 h-6" />
+        </button>
+        <button
+          onClick={handlePrevious}
+          className="absolute p-2 bg-[#008ce1] hover:bg-[#008ce1]/80 text-slate-200 hover:text-white rounded-full hover:cursor-pointer right-4"
+        >
+          <BsChevronRight className="w-6 h-6" />
+        </button>
+      </div>
+    </section>
   );
 };
 
