@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+// import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import NavbarExample from "@/components/navbar-fix";
 
 export const metadata: Metadata = {
   title: "PDAM Tirta Antokan",
@@ -17,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="flex min-h-screen flex-col">
-          <Navbar />
+          <NavbarExample />
           <main className="flex-1">
             <div className="relative">{children}</div>
           </main>

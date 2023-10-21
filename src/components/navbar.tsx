@@ -9,13 +9,14 @@ export default function Navbar() {
       <div className="max-w-7xl lg:mx-auto mx-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-4">
+            {/* Hamburger Button */}
             <div className="p-2 rounded-lg border bg-slate-50 block lg:hidden shadow-sm">
               <HiBars3BottomLeft className="w-6 h-6" />
             </div>
             {/* Brand */}
             <a href="/" className="flex items-center gap-2">
               <Logo className="lg:h-10 h-8" />
-              <div className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+              <div className="self-center whitespace-nowrap font-semibold dark:text-white">
                 <h1 className="text-xl lg:text-2xl text-[#008ce1]">
                   PDAM TIRTA ANTOKAN
                 </h1>
