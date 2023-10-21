@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import Image from "next/image";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const CarouselData = {
   slides: [
@@ -54,15 +54,15 @@ const Carousel = () => {
       />
       <button
         onClick={handlePrevious}
-        className="absolute w-8 h-8 text-white hover:cursor-pointer left-4"
+        className="absolute p-2 bg-[#008ce1] hover:bg-[#008ce1]/80 text-slate-200 hover:text-white rounded-full hover:cursor-pointer left-4"
       >
-        <BsArrowLeftCircleFill className="w-6 h-6" />
+        <BsChevronLeft className="w-6 h-6" />
       </button>
       <button
-        onClick={handleNext}
-        className="absolute w-8 h-8 text-white hover:cursor-pointer arrow-right right-4"
+        onClick={handlePrevious}
+        className="absolute p-2 bg-[#008ce1] hover:bg-[#008ce1]/80 text-slate-200 hover:text-white rounded-full hover:cursor-pointer right-4"
       >
-        <BsArrowRightCircleFill className="w-6 h-6" />
+        <BsChevronRight className="w-6 h-6" />
       </button>
     </div>
   );
