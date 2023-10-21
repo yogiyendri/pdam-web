@@ -1,0 +1,2 @@
+primary=#008ce1
+secondary=#008c00
