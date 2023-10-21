@@ -20,7 +20,7 @@ export default function Navbar() {
             </div>
           </a>
           {/* Navigation */}
-          <nav className="flex items-center space-x-5">
+          <nav className="items-center space-x-5 hidden lg:block">
             <Link
               href="/"
               className="text-gray-600 text-sm dark:text-white hover:text-[#008ce1]"
